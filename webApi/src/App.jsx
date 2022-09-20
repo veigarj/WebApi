@@ -1,11 +1,15 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 
+// 4 custom Hooks
+import { useFetch } from './hooks/userFetch';
+
 // Url base da requisição
 const url = 'http://localhost:3000/products';
 
 function App() {
 
+  
 
   // Config useState---------------------------
 
@@ -16,20 +20,25 @@ function App() {
 
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
-
+  
   // 1 - resgatando dados --------------------
-  useEffect(() => {
-    async function fetchData() {
-      // resposta
-      const res = await fetch(url);
-      // invoco o metodo em Json da const res
-      const data = await res.json();
-      // trasforma os dados puxados
-      setProducs(data);
-    }
-    // invoca a função que com a requisição Fetch --
-    fetchData();
-  }, []);
+  
+  // configurar para usar customs Hooks {data: items}
+  const {data: items} = useFetch(url)
+
+
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     // resposta
+  //     const res = await fetch(url);
+  //     // invoco o metodo em Json da const res
+  //     const data = await res.json();
+  //     // trasforma os dados puxados
+  //     setProducs(data);
+  //   }
+  //   // invoca a função que com a requisição Fetch --
+  //   fetchData();
+  // }, []);
 
   // 2 - Add de Produtos --------------------
 
@@ -69,7 +78,8 @@ function App() {
       <h1>Lista de Produtos</h1>
       <ul>
         {/* chamar cada item individual de products */}
-        {products.map((product) => (
+        {/* para usar como customs Hooks tem que fazer a validação items && items */}
+        {items && items.map((product) => (
           // imprimir cada propriedade do product com os parametros
           <li key={product.id}>{product.name} - R$ {product.price} </li>
         ))}
