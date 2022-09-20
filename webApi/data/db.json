@@ -1,0 +1,47 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Cadeira",
+      "price": "29.99"
+    },
+    {
+      "id": 3,
+      "name": "Mesa",
+      "price": "250.00"
+    },
+    {
+      "id": 4,
+      "name": "Calça Vermelha",
+      "price": "150.00"
+    },
+    {
+      "id": 5
+    },
+    {
+      "name": "calça",
+      "price": "50",
+      "id": 6
+    },
+    {
+      "name": "calça",
+      "price": "50",
+      "id": 7
+    },
+    {
+      "name": "teste",
+      "price": "10.00",
+      "id": 8
+    },
+    {
+      "name": "computador",
+      "price": "1500.00",
+      "id": 9
+    },
+    {
+      "name": "computador",
+      "price": "1500.00",
+      "id": 10
+    }
+  ]
+}
