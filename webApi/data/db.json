@@ -42,6 +42,56 @@
       "name": "computador",
       "price": "1500.00",
       "id": 10
+    },
+    {
+      "name": "mouse",
+      "price": "60.00",
+      "id": 11
+    },
+    {
+      "name": "Monitor",
+      "price": "650.00",
+      "id": 12
+    },
+    {
+      "name": "Monitor",
+      "price": "650.00",
+      "id": 13
+    },
+    {
+      "name": "Teclado",
+      "price": "25.00",
+      "id": 14
+    },
+    {
+      "name": "tapete",
+      "price": "15.00",
+      "id": 15
+    },
+    {
+      "name": "tapete",
+      "price": "15.00",
+      "id": 16
+    },
+    {
+      "name": "tapete",
+      "price": "15.00",
+      "id": 17
+    },
+    {
+      "name": "tapete",
+      "price": "15.00",
+      "id": 18
+    },
+    {
+      "name": "tapete",
+      "price": "15.00",
+      "id": 19
+    },
+    {
+      "name": "tapete",
+      "price": "15.00",
+      "id": 20
     }
   ]
 }
